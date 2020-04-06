@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.huawei.agconnect'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    //Map
+    compileOnly 'com.google.android.gms:play-services-base:17.1.0'
+    compileOnly 'com.google.android.gms:play-services-maps:17.0.0'
+    compileOnly 'com.google.android.gms:play-services-basement:17.1.0'
+    compileOnly 'com.huawei.hms:maps:4.0.0.301'
+    compileOnly 'com.google.android.gms:play-services-location:17.0.0'
+    compileOnly 'com.huawei.hms:location:4.0.2.300'
+    compileOnly 'com.huawei.hms:base:4.0.2.300'
+    compileOnly 'com.google.android.material:material:1.0.0-rc01'
+}
